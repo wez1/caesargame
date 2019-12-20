@@ -18,14 +18,15 @@
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" id="haxor" onclick="gameInstance.SetFullscreen(1)"></div>
         
         <div class="title">CaesarGame</div>
       </div>
     </div>
     
     <script type="text/javascript">
-      var divi = document.getElementsByClassName('fullscreen')[0];
+      var divi = document.getElementById('haxor');
+      console.log(divi)
       if (divi) divi.click();
     </script>
   </body>
